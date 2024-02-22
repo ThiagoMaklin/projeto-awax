@@ -1,2 +1,2 @@
-# projeto-awax
-Projeto de página de stúdio de design para composição de portifólio utilizando HTML semântico e Flexbox. 
+# Projeto AWAX
+## Projeto de página de studio de design para composição de portifólio utilizando HTML semântico e Flexbox. 
