@@ -1,3 +1,7 @@
+/*
+Interface CSS
+*/
+
 * {
     margin: 0px;
     padding: 0px;
@@ -7,6 +11,7 @@
 body {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-size: 13px;
+    overflow-x: hidden;
 }
 
 header {
@@ -31,6 +36,7 @@ header {
     width: 80px;
     height: 80px;
     background-color: #b28756;
+    border-radius: 30px;
 }
 
 .menu {
@@ -64,4 +70,194 @@ header {
 .menu li a:hover,
 .menu .active a {
     border-bottom: 5px solid #b28756;
+    color: #ccc;
+}
+
+.button {
+    display: inline-block;
+    background-color: #b28756;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 11px;
+    margin-top: 32px;
+    padding: 8px 24px;
+    border-radius: 20px;
+}
+
+.banner {
+    height: calc(100vh - 100px);
+    background-color: #333;
+    background-image: url('../media/bg.jpg');
+    background-size: cover;
+    background-position: bottom;
+    overflow: hidden;
+}
+
+.banner .sliders {
+    width: 500vw;
+    height: 100%;
+}
+
+.banner .slide {
+    width: 100vw;
+    height: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.banner .slidearea {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.banner h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.banner h1 span {
+    color: #b28756;
+}
+
+
+.banner h2 {
+    text-transform: uppercase;
+    margin-top: 24px;
+}
+
+.banner .slider-pointers {
+    width: 100vw;
+    height: 20px;
+    position: absolute;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .pointer {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border: 2px solid #b28756;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.banner .pointer.active {
+    background-color: #b28756;
+}
+
+.default {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.default .section-title,
+.default .section-desc {
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.default .section-title {
+    font-size: 20px;
+}
+
+.default .section-desc {
+    font-size: 13px;
+    color: #ccc;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.default .section-body {
+    max-width:  1140px;
+    margin: auto;
+}
+
+.default.light {
+    background-color: #f7f7f7;
+
+}
+
+.default.light .section-title
+.default.light .section-body {
+    color: #000;
+}
+
+.default.dark {
+    background-color: #000;
+}
+
+.default.dark .section-title,
+.default.dark .section-body {
+    color: #fff;
+}
+
+
+
+
+
+/*
+Especific area CSS
+*/
+
+.section-aboutus {
+    display: flex;
+}
+
+.section-aboutus--left {
+    flex: 1;
+}
+
+.section-aboutus--left p {
+    font-size: 14;
+    line-height: 24px;
+}
+
+.section-aboutus--right {
+    width: 520px;
+}
+
+.section-aboutus--right img {
+    width: 480px;
+    box-shadow: 0px 5px 10px #333;
+}
+
+
+.section-services {
+    display: flex;
+    text-align: center;
+}
+
+.section-service {
+    flex: 1;
+    padding: 24px;
+    border-right: 1px solid #333;
+}
+
+.section-service:first-child {
+    border-left: 1px solid #333;
+}
+
+.section-service h4 {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.section-service p {
+    color: #999;
+    margin-top: 10px;
+    font-size: 13px;
+
 }
