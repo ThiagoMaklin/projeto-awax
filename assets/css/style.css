@@ -455,3 +455,114 @@ Especific area CSS
 .section-team--social a:hover {
     background-color: #b28756;
 } 
+
+.default.light.clients {
+    background-color: rgb(247, 247, 247);
+    padding-bottom: 0px;
+}
+
+.section-clients {
+    overflow: hidden;
+    max-width: 888px;
+    margin: auto;
+}
+
+.section-clients .sliders {
+    width: 300vw;
+    height: 100%;
+}
+
+.section-clients .slide {
+    width: 888px;
+    height: 100%;
+    display: inline-block;
+}
+
+.section-clients .slidearea {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
+
+.section-clients .slider-pointers {
+    width: 888px;
+    height: 20px;
+    margin-top: 8px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-clients .pointer {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border: 2px solid #b28756;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.section-clients .pointer.active {
+    background-color: #b28756;
+}
+
+.section-clients--avatar {
+    width: 150px;
+    height: auto;
+    margin-top: 24px;
+}
+
+.section-clients--name {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 24px;
+}
+
+.section-clients--role {
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.slidearea p {
+    margin: 32px 0px;
+    text-align: center;
+    line-height: 1.8;
+    color: #777;
+}
+
+.awards .section-body {
+    max-width: none;
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+}
+
+.section-awards {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 128px;
+    padding-left: 128px;
+}
+
+.section-awards .award {
+    margin-right: 24px;
+    flex: 1;
+}
+
+.section-awards .award:last-child {
+    margin-right: 0px;
+ }
+
+ .section-awards .award img {
+    display: block;
+ }
